@@ -1,6 +1,6 @@
 {
-  "name": "portsite",
   "homepage": "http://thiha3013.github.io",
+  "name": "portsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
