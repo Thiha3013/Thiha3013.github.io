@@ -35,7 +35,8 @@
 
 .about_cards {
     display: grid;
-    grid-template-columns:  repeat(3, 1fr);
+    padding: 0rem 20% 0rem 20%;
+    grid-template-columns:  repeat(2, 1fr);
     gap: 1.5rem;
 }
 

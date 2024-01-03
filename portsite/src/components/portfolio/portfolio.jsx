@@ -3,16 +3,18 @@ import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
+/*
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
+*/
 
 const data = [
     {
         id: 1,
         image: IMG1,
-        title: 'PROJECT1',
-        github:"https://github.com",
+        title: 'Implied Volaitility calculator',
+        github:"https://github.com/Thiha3013/IVchart",
         demo:"https://dribbble.com/Alien_pixels"
     },
     {
@@ -26,27 +28,6 @@ const data = [
         id: 3,
         image: IMG3,
         title: 'PROJECT3',
-        github:"https://github.com",
-        demo:"https://dribbble.com/Alien_pixels"
-    },
-    {
-        id: 3,
-        image: IMG4,
-        title: 'PROJECT4',
-        github:"https://github.com",
-        demo:"https://dribbble.com/Alien_pixels"
-    },
-    {
-        id: 5,
-        image: IMG5,
-        title: 'PROJECT5',
-        github:"https://github.com",
-        demo:"https://dribbble.com/Alien_pixels"
-    },
-    {
-        id: 6,
-        image: IMG6,
-        title: 'PROJECT6',
         github:"https://github.com",
         demo:"https://dribbble.com/Alien_pixels"
     },
@@ -68,8 +49,8 @@ const Portfolio = () => {
                         </div>
                         <h3>{title}</h3>
                         <div className="portfolio_item-cta">
-                            <a href={github} className='btn' target='_blank'>Github</a>
-                            <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                            <a href={github} className='btn' rel="noopener noreferrer" target='_blank'>Github</a>
+                            <a href={demo} className='btn btn-primary' rel="noopener noreferrer" target='_blank'>Live Demo</a>
                         </div>
                     </article>
                     )
