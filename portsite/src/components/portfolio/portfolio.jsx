@@ -1,9 +1,9 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-/*
+import IMG2 from '../../assets/Sentiment_demo.png'
+/*import IMG3 from '../../assets/portfolio3.jpg'
+
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
@@ -20,10 +20,11 @@ const data = [
     {
         id: 2,
         image: IMG2,
-        title: 'PROJECT2',
-        github:"https://github.com",
+        title: 'Sentiment Analysis',
+        github:"https://github.com/Thiha3013/Sentiment",
         demo:"https://dribbble.com/Alien_pixels"
     },
+    /*
     {
         id: 3,
         image: IMG3,
@@ -31,6 +32,7 @@ const data = [
         github:"https://github.com",
         demo:"https://dribbble.com/Alien_pixels"
     },
+    */
 ]
 
 const Portfolio = () => {
@@ -50,7 +52,7 @@ const Portfolio = () => {
                         <h3>{title}</h3>
                         <div className="portfolio_item-cta">
                             <a href={github} className='btn' rel="noopener noreferrer" target='_blank'>Github</a>
-                            <a href={demo} className='btn btn-primary' rel="noopener noreferrer" target='_blank'>Live Demo</a>
+                            {/*<a href={demo} className='btn btn-primary' rel="noopener noreferrer" target='_blank'>Live Demo</a>*/}
                         </div>
                     </article>
                     )

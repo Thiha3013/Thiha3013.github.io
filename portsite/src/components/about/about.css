@@ -1,4 +1,6 @@
-.about_container {
+
+
+about_container {
     display: flex;
     justify-content: center;
     /*display: grid;
@@ -35,16 +37,15 @@
 
 .about_cards {
     display: grid;
-    padding: 0rem 20% 0rem 20%;
     grid-template-columns:  repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .about_card {
     background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2rem 6rem 2rem 6rem;
     text-align: center;
 }
 

@@ -40,8 +40,8 @@ const About = () => {
 
           </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum, non nemo enim totam perspiciatis possimus harum quaerat dolor, doloremque modi fuga id. Alias architecto aliquam dolores, perspiciatis dignissimos hic.</p>
-          {/*<a href="" className="btn">Contact me</a>*/}
+          {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum, non nemo enim totam perspiciatis possimus harum quaerat dolor, doloremque modi fuga id. Alias architecto aliquam dolores, perspiciatis dignissimos hic.</p>
+          <a href="" className="btn">Contact me</a>*/}
         </div>
       </div>
     </section>

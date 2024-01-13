@@ -1,21 +1,29 @@
 import './contact.css'
-import React from 'react'
+import React, { useRef, useState } from 'react';
 import {MdOutlineEmail} from 'react-icons/md'
 import {FaInstagram} from "react-icons/fa";
-import {useRef} from 'react';
 import emailjs from 'emailjs-com'
 
 
 const Contact = () => {
-  const form =useRef();
+  const form = useRef();
+  const [message, setMessage] = useState('');
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_e2m6m9e', 'service_e2m6m9e', form.current, 'AnBu2_Avb7Fiz1AD-')
-    
-    e.target.reset()
+    emailjs.sendForm('service_98mdhxx', 'template_j1ab8zx', form.current, 'AnBu2_Avb7Fiz1AD-')
+      .then((result) => {
+        console.log(result.text);
+        setMessage('Message sent successfully!');
+        e.target.reset();
+      }, (error) => {
+        console.log(error.text);
+        setMessage('Failed to send message, please try again later.');
+      });
   };
+
 
   return (
     <section id='contact'>
@@ -49,10 +57,11 @@ const Contact = () => {
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+          <button type="submit" className="btn btn-primary">Send Message</button>
+          {message && <div>{message}</div>}
         </form>
       </div>
     </section>
