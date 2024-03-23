@@ -4,6 +4,10 @@ import React from 'react'
 import { FaAward } from 'react-icons/fa'
 //import { FiUser } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import { PiSoccerBallFill } from "react-icons/pi";
+import { FaUserGraduate } from "react-icons/fa";
+
+
 
 const About = () => {
   return (
@@ -23,25 +27,31 @@ const About = () => {
             <article className="about_card">
               <FaAward className='about_icon'></FaAward>
               <h5>Experience</h5>
-              <small>5+ years coding</small>
+              <small>6+ years coding</small>
             </article>
-
-            {/*<article className="about_card">
-              <FiUser className='about_icon' />
-              <h5>Clients</h5>
-              <small>0 Clients</small>
-            </article>
-            */}
             <article className="about_card">
-              <VscFolderLibrary className='about_icon' />
+              <PiSoccerBallFill className='about_icon'/>
+              <h5>Hobbies</h5>
+              <small>Football,  </small>
+              <small>DOTA2,  </small>
+              <small>Running</small>
+            </article>
+            <article className="about_card">
+              <VscFolderLibrary className='about_icon'/>
               <h5>Projects</h5>
-              <small>3 completed projects</small>
+              <small>IV calculator,  </small>
+              <small>Sentiment Analyzer,  </small>
+              <small>Mummy Maze clone</small>
+            </article>
+            <article className="about_card">
+            <FaUserGraduate className='about_icon'/>
+              <h5>Interests</h5>
+              <small>Quantative Finance,  </small>
+              <small>Data Mining,  </small>
+              <small>Machine Learning</small>
             </article>
 
           </div>
-
-          {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cum, non nemo enim totam perspiciatis possimus harum quaerat dolor, doloremque modi fuga id. Alias architecto aliquam dolores, perspiciatis dignissimos hic.</p>
-          <a href="" className="btn">Contact me</a>*/}
         </div>
       </div>
     </section>

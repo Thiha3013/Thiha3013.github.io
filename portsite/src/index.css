@@ -11,21 +11,20 @@
 }
 
 :root {
-    --color-bg: #FF7000;
-    /*--color-bg-variant: #fFAC4A;*/
-    --color-bg-variant: linear-gradient( to bottom right, #ff7e5f, #feb47b);
-    --color-primary: #FFDFB0;;
-    --color-primary-variant: #FFD496;
-    --color-white: #FFFFFF;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-bg: #F0F0F0; /* Light grey for background */
+    --color-bg-variant: #E0E0E0; /* Slightly darker shade for contrast */
+    --color-primary: #20B2AA; /* lightseagreen for primary text and elements, used sparingly */
+    --color-primary-variant: #3DCCC7; /* A lighter variant for accents */
+    --color-white: #385170; /* Pure white for backgrounds and accents */
+    --color-light: #142d4c; /* Light white for overlays and subtle accents */
+    --color-dark: #333; /* Darker text or elements for better readability */
 
-    --transition: all 400ms ease; 
+    --transition: all 400ms ease;
 
     --container-width-1g: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -36,11 +35,9 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    /*background: var(--color-bg);*/
-    background-image: linear-gradient(to right, #eb3349   , #fFAC4A);
-    color: var(--color-white);
+    background: var(--color-bg);
+    color: var(--color-dark); /* Dark color for main text to ensure readability */
     line-height: 1.7;
-   /* background-image: url(../src/assets/bg-texture.png);*/
 }
 
 /* General Styles */
